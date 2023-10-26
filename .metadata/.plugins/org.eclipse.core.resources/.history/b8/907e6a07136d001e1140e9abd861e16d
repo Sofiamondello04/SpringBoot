@@ -1,0 +1,11 @@
+package com.curso.inventory.services;
+
+import org.springframework.http.ResponseEntity;
+
+import com.curso.inventory.response.CategoryResponseRest;
+
+public interface ICategoryService {
+
+	public ResponseEntity<CategoryResponseRest> search();
+	public ResponseEntity<CategoryResponseRest> searchById(Long id);
+	}
